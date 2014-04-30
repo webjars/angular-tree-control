@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>angular-tree-control</artifactId>
-    <version>0.1.6-SNAPSHOT</version>
+    <version>0.1.5-1-SNAPSHOT</version>
     <name>Angular Tree Control</name>
     <description>WebJar for Angular Tree Control</description>
     <url>http://webjars.org</url>
@@ -52,6 +52,12 @@
         <upstream.version>0.1.5</upstream.version>
         <upstream.url>https://github.com/wix/angular-tree-control/archive</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
+        <requirejs>
+            {
+                paths: { "angular-tree-control": "angular-tree-control" },
+                shim: { "angular-tree-control": [ "angular" ] }
+            }
+        </requirejs>
     </properties>
 
     <build>
