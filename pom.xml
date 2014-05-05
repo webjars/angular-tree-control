@@ -54,8 +54,8 @@
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
         <requirejs>
             {
-                paths: { "angular-tree-control": "angular-tree-control" },
-                shim: { "angular-tree-control": [ "angular" ] }
+                "paths": { "angular-tree-control": "angular-tree-control" },
+                "shim": { "angular-tree-control": [ "angular" ] }
             }
         </requirejs>
     </properties>
