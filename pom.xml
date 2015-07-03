@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>angular-tree-control</artifactId>
-    <version>0.2.9-SNAPSHOT</version>
+    <version>0.2.9</version>
     <name>Angular Tree Control</name>
     <description>WebJar for Angular Tree Control</description>
     <url>http://webjars.org</url>
@@ -36,7 +36,7 @@
         <url>http://github.com/webjars/angular-tree-control</url>
         <connection>scm:git:https://github.com/webjars/angular-tree-control.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/angular-tree-control.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>angular-tree-control-0.2.9</tag>
     </scm>
     
     <dependencies>
@@ -90,11 +90,11 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <echo message="unzip archive"/>
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
-                                <echo message="moving resources"/>
+                                <echo message="unzip archive" />
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
+                                <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/angular-tree-control-${upstream.version}" includes="css/ images/ angular-tree-control.js"/>
+                                    <fileset dir="${project.build.directory}/angular-tree-control-${upstream.version}" includes="css/ images/ angular-tree-control.js" />
                                 </move>
                             </target>
                         </configuration>
